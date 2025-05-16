@@ -27,7 +27,7 @@ export default function Navbar() {
             <Link className="hidden lg:flex  items-center gap-2"href='/'>For teams <GoChevronDown /></Link>
             <Link className="hidden lg:flex  items-center gap-2"href='/'>For Developers </Link>
             <Link className="hidden md:flex  items-center gap-2"href='/'>contact </Link>
-           <button className="w-max bg-purple-400 text-white rounded-full py-3 px-4">Launch App</button>
+           <button className="w-max bg-purple-400 text-white rounded-full py-3 px-4 text-xs">Launch App</button>
             <RiMenuFill className="md:hidden"/>
 
             

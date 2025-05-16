@@ -4,7 +4,9 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-
+*{
+  /* border: 1px solid red; */
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -26,7 +28,7 @@ body {
 }
 
 .hero{
-  background-image: linear-gradient(rgba(215, 102, 215, 0.393),rgba(22, 20, 20, 0.533)), url('../../public/hero.jpg');
+  background-image: linear-gradient(rgba(215, 102, 215, 0.582),rgba(22, 20, 20, 0.846)), url('../../public/hero.jpg');
   width: 100%;
   height: 100vh;
   background-size: cover;
