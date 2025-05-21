@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import * as motion from "motion/react-client"
+
 import { BsArrowRight } from "react-icons/bs";
 import SecondHero from "./SecondHero";
 
@@ -7,11 +9,12 @@ export default function Hero() {
   return (
     <div>
       <div className="mt-15 md:mt-6 relative w-full h-screen object-cover flex text-center flex-col lg:justify-center gap-3 ">
-        <div className="hidden lg:block border-[15px] border-purple-500 rounded-2xl w-[300px] transform rotate-15 absolute -left-10 bottom-40 ">
+        <div data-aos="fade-up-left" className="hidden lg:block border-[15px] border-purple-500 rounded-2xl w-[300px] transform rotate-15 absolute -left-10 bottom-40 ">
           <Image
             src="https://leonardo.ai/wp-content/uploads/2025/05/default_insanity-square-2.jpg.webp"
             width={300}
             height={300}
+            alt="hero-image"
           />
         </div>
 
@@ -32,15 +35,19 @@ export default function Hero() {
             <BsArrowRight className="transform transition-all duration-150 ease-in group-hover:translate-x-2" />
           </button>
         </div>
-        <div className=" hidden lg:block border-[10px] border-purple-500 rounded-2xl w-[280] transform -rotate-15 absolute right-6 -b">
-          <video
-            src="https://leonardo.ai/wp-content/uploads/2024/05/cat-space-med-1.mp4"
-            width={280}
-            height={200}
-            loop
-            autoPlay
-            controls={false}
-          />
+        <div data-aos="fade-down-right" className=" hidden lg:block border-[10px] border-purple-500 rounded-2xl w-[280] transform -rotate-15 absolute right-6 -b">
+          
+              <video
+                src="https://leonardo.ai/wp-content/uploads/2024/05/cat-space-med-1.mp4"
+                width={280}
+                height={200}
+                loop
+                autoPlay
+                controls={false}
+              />
+           
+
+
         </div>
       </div>
       <SecondHero />
