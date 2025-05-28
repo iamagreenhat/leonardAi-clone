@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="flex  px-5 gap-5 lg:px-[auto] lg:gap-2 justify-around items-center mt-4">
             <Image className="mr-auto lg:hidden"src="https://leonardo.ai/wp-content/uploads/2024/11/leonardo-logo-white-fix.svg" width={150} height={150} alt="logo"/>
             <Image className=" hidden lg:block"src="https://leonardo.ai/wp-content/uploads/2024/11/leonardo-logo-white-fix.svg" width={150} height={150} alt="logo"/>
-            <Link className="hidden md:flex  items-center gap-2"href='/'>Features  <GoChevronDown /></Link>
+            <Link className="hidden md:flex  items-center gap-2"href='/register'>Register  <GoChevronDown /></Link>
             <Link className="hidden lg:flex  items-center gap-2"href='/'>Solutions <GoChevronDown /></Link>
             <Link className="hidden lg:flex  items-center gap-2"href='/'>Learn <GoChevronDown /></Link>
             <Link className="hidden lg:flex  items-center gap-2"href='/'>For teams <GoChevronDown /></Link>
