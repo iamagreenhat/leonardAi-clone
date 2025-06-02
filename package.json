@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.4",
     "aos": "^2.3.4",
     "motion": "^12.12.1",
     "next": "15.3.2",

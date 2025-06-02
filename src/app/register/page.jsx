@@ -65,9 +65,9 @@ export default function RegisterPage() {
         // if the keys is greater than 0, that means there is an error and we have to display the error 
         if(Object.keys(formErrors).length>0){
             setErrors(formErrors)
-            return
+            console.log(errors)
         }
-        setErrors({})
+        // setErrors({})
         console.log("form is submitted")
         // send our form data to the API
         try{
