@@ -70,12 +70,10 @@ export default function SignupPage() {
             
             // send our form data to the API
             try{
-                const url="/api/register/"
-                const res=await fetch(url, {
+                const res=await fetch('/api/signup', {
                     method:"POST",
                     headers:{
                         "Content-Type": "application/json",
-    
                     },
                     body:JSON.stringify(formData)
                 })
