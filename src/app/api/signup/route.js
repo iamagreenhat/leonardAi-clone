@@ -3,7 +3,7 @@ import Dbconnect from "@/utils/DBconnect"
 
 export const POST=async(req)=>{
     // get the formdata sent by the client
-    // destructure the form data(extract teh form data) and convert to object 
+    // destructure the form data(extract the form data) and convert to object 
    const {username,email,password}=await req.json()
    try{
 
@@ -20,7 +20,8 @@ export const POST=async(req)=>{
        return  Response.json({msg:"USer registered succeffully"})
     }
     else{
-           return Response.json({msg:"USer not registered succeffully"})
+       return  Response.json({msg:"USer could not be registered"})
+         
 
        }
        

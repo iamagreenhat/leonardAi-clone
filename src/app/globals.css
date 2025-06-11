@@ -44,3 +44,13 @@ body {
 @media screen {
   
 }
+
+.loader {
+ 
+  background: repeating-linear-gradient(90deg,currentColor 0 8%,#00000046 0 10%) 200% 100%/200% 3px no-repeat;
+  animation: l3 2s steps(6) infinite;
+}
+.loader:before {
+  content:"Loading..."
+}
+@keyframes l3 {to{background-position: 80% 100%}}

@@ -4,8 +4,10 @@ import InputExample from '@/components/Input'
 import { Input } from '@headlessui/react'
 import React, { useState } from 'react'
 import { Button } from '@headlessui/react'
+import { useRouter } from 'next/navigation'
 
 export default function SignupPage() {
+    const router=useRouter()
 
     
        const [formData, setFormData] = useState({
@@ -77,6 +79,14 @@ export default function SignupPage() {
                     },
                     body:JSON.stringify(formData)
                 })
+
+                console.log(res)
+                if(res.ok){
+                    // route to login page
+                    router.replace('/login')
+
+
+                }
     
             }
     
