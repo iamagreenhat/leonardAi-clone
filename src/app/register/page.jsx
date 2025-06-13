@@ -71,7 +71,7 @@ export default function RegisterPage() {
         console.log("form is submitted")
         // send our form data to the API
         try{
-            const url="/api/register/"
+            const url="/api/blog/"
             const res=await fetch(url, {
                 method:"POST",
                 headers:{
@@ -100,8 +100,8 @@ export default function RegisterPage() {
               {errors.title &&( <p className='text-sm text-red-400 font-semibold'> {errors.title}</p>)} 
             </div>
             <div className='flex flex-col mb-4 w-1/4'>
-                <label htmlFor="">Price</label>
-                <input onChange={handleChange} name="price" type="number" className='ring ring-gray-500 px-4 py-2' />
+                <label htmlFor="">Body</label>
+                <input onChange={handleChange} name="body" type="text" className='ring ring-gray-500 px-4 py-2' />
                 {errors.price &&( <p className='text-sm text-red-400 font-semibold'> {errors.price}</p>)} 
             </div>
             <div className='flex flex-col mb-4 w-1/4'>
@@ -114,11 +114,11 @@ export default function RegisterPage() {
                 <input onChange={handleChange} name="category" type="text" className='ring ring-gray-500 px-4 py-2' />
                 {errors.category &&( <p className='text-sm text-red-400 font-semibold'> {errors.category}</p>)} 
             </div>
-            <div className='flex flex-col mb-4 w-1/4'>
+            {/* <div className='flex flex-col mb-4 w-1/4'>
                 <label htmlFor="">Image</label>
                 <input onChange={handleChange} name="image" type="text" className='ring ring-gray-500 px-4 py-2' />
             </div>
-                {errors.apiError &&( <p className='text-sm text-red-400 font-semibold'> {errors.apiError}</p>)} 
+                {errors.apiError &&( <p className='text-sm text-red-400 font-semibold'> {errors.apiError}</p>)}  */}
 
             <button className="bg-green-600 text-white px-4 py-2">Submit</button>
 
